@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Metarialise </title>
+
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Josefin Sans', sans-serif;
+
+
+        }
+
+        .carousel-slider img {
+            height: 80vh;
+        }
+
+        hr {
+            margin-bottom: 50px;
+        }
+
+        .about {
+            margin: 20px 50px;
+        }
+
+        #about-img {
+            height: 300px;
+            width: 100%;
+        }
+
+        #about-text {
+            padding: 40px 30px;
+        }
+
+        #about-text a {
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 780px) {
+            .carousel-slider img {
+                height: 40vh;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            hr {
+                margin-bottom: 15px;
+            }
+
+            h5 {
+                font-size: 14px;
+            }
+
+            .about {
+                margin: 5px 10px;
+            }
+
+            #about-img {
+                width: 100%;
+                height: 180px;
+            }
+
+            #about-text {
+                padding: 10px 20px;
+                text-align: center;
+            }
+
+            #about-text h5 {
+                text-align: center;
+                font-size: 18px;
+            }
+
+            .gallary img {
+                margin: 10px 5px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="blue ">
+        <div class="nav-wrapper container">
+            <!-- side bar  -->
+            <ul id="slide-out" class="sidenav">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img src="image/download1.jpg" class="responsive-img">
+                        </div>
+                        <a href="#user"><img class="circle" src="image/profile.JPG"></a>
+                        <a href="#name"><span class="white-text name">Nitesh Kumar Singh</span></a>
+                        <a href="#email"><span class="white-text email">indianniteshkumarsingh@gmail.com</span></a>
+                    </div>
+                </li>
+                <li>
+                    <a class="waves-effect waves-light blue-text"><i
+                            class="material-icons blue-text left">home</i>Home</a>
+                </li>
+                <li>
+                    <a class="waves-effect waves-light blue-text"><i
+                            class="material-icons blue-text left">person</i>About Us</a>
+                </li>
+                <li>
+                    <a class="waves-effect waves-light blue-text"><i
+                            class="material-icons blue-text left">settings</i>Servicess</a>
+                </li>
+                <li>
+                    <a class="waves-effect waves-light blue-text"><i
+                            class="material-icons blue-text left">photo_library</i>Gallary</a>
+                </li>
+                <li>
+                    <a class="waves-effect waves-light blue-text"><i
+                            class="material-icons blue-text left">contacts</i>Contact Us</a>
+                </li>
+                <li>
+                    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Sign Up</a>
+                </li>
+
+            </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <!-- ......................... large screen  part  .  -->
+            <a href="#!" class="brand-logo">WebCoir</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="home">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="service">Service</a></li>
+                <li><a href="gallary">Gallary</a></li>
+                <li><a href="contect">Contect Us</a></li>
+                <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Sign Up</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- carasole part  -->
+    <div class="carousel carousel-slider">
+        <a class="carousel-item" href="#one!"><img src="image/download1.jpg"></a>
+        <div class="carousel-fixed-item center-align white-text darken-5">
+            <h4>Heading of the Carousel</h3>
+                <h6>The caption and description of the carousel.</h6>
+                <a class="waves-effect waves-light blue btn"><i class="material-icons right">send</i>More Info</a>
+        </div>
+        <a class="carousel-item" href="#two!"><img src="image/download2.jpg"></a>
+
+        <a class="carousel-item" href="#three!"><img src="image/download3.jpg"></a>
+        <a class="carousel-item" href="#four!"><img src="image/download4.jpg"></a>
+        <a class="carousel-item" href="#four!"><img src="image/download5.jpg"></a>
+    </div>
+
+
+    <!-- floating action button  -->
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+            <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+
+        </ul>
+    </div>
+
+    <!-- about part  -->
+    <section>
+        <h4 class="center-align blue-text">About Us</h3>
+            <div class="row about">
+                <hr class="col s4 offset-s4">
+                <div class="col m6 ">
+                    <img src="image/download5.jpg" class="responsive-img card-panel hoverable" alt="" id="about-img">
+                </div>
+                <div class="col m6 center-align" id="about-text">
+                    <h5>Who Am I ?</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut qui a dolorem repudiandae alias
+                        ullam.
+                        Ea repellat sit earum deserunt facere aperiam consectetur ullam obcaecati suscipit dolore!
+                        Exercitationem, iste alias?</p>
+                    <a class="waves-effect waves-light blue btn "><i class="material-icons right">send</i>More Info</a>
+                </div>
+            </div>
+    </section>
+    <section>
+        <h4 class="center-align blue-text">My College Degree</h3>
+            <div class="row about">
+                <hr class="col s4 offset-s4">
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <ul class="collapsible blue">
+                        <li>
+                            <div class="collapsible-header red"><i class="material-icons">school</i>High School</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit. Repellat, illum. Tempora velit reprehenderit officiis deserunt repellat ad
+                                    assumenda quibusdam quae, deleniti sint, voluptatibus architecto minima minus?
+                                    Doloribus ipsa rerum dicta laborum error vitae id. Facere laudantium doloremque
+                                    exercitationem numquam dolorem esse atque accusantium culpa voluptate, eum
+                                    asperiores. Veniam, blanditiis. Non modi officia inventore similique eligendi
+                                    maiores, tempore magnam suscipit illo ullam temporibus quia ad rerum veritatis
+                                    consectetur voluptates voluptate, dolore soluta deleniti eveniet libero, laudantium
+                                    rem perspiciatis. Saepe quas accusantium dolorum atque omnis sequi nostrum, et
+                                    possimus tempore dignissimos mollitia ducimus eaque! Exercitationem debitis
+                                    temporibus numquam vel eligendi necessitatibus dolorem obcaecati ipsam maxime, id
+                                    ipsa rerum dicta distinctio itaque amet iure repellendus eos dolore facilis cum
+                                    similique laboriosam mollitia provident autem! Maiores autem in, labore eaque quia
+                                    architecto vero repellendus, quo recusandae quaerat praesentium sequi tempora?
+                                    Laboriosam omnis illum rem impedit porro unde maiores pariatur quia? Aliquam dolor
+                                    reprehenderit voluptatem alias sequi at, molestiae excepturi! Fuga consectetur
+                                    repellat dolorem aliquam quod dolorum quasi animi mollitia error deleniti sapiente
+                                    fugiat natus facilis iure, corrupti voluptatibus sequi earum delectus. Consequatur
+                                    voluptas facere ad odio expedita cumque reiciendis illum explicabo perspiciatis,
+                                    sequi obcaecati possimus nostrum veritatis aperiam ipsum provident reprehenderit,
+                                    voluptatibus iure laboriosam.</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header red"><i class="material-icons">school</i>Secondary College
+                            </div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit. Vitae, nobis reprehenderit non illo quas officia error beatae, libero placeat
+                                    animi deserunt consectetur quod eveniet ipsam inventore rem quia fugiat ab. Impedit
+                                    fugiat debitis cupiditate asperiores enim odit sit placeat maiores alias. Quos ea
+                                    numquam vel corrupti ad suscipit reprehenderit accusantium veniam adipisci,
+                                    excepturi aliquid perspiciatis velit cum eveniet, optio quia. Molestiae eius, rem
+                                    veniam ipsa dolorem esse adipisci ullam nemo voluptatibus, velit laudantium
+                                    veritatis ad animi culpa porro officiis soluta! Iure quae aut reprehenderit porro
+                                    sed. Sint praesentium, quod culpa voluptatem quis quaerat debitis distinctio est?
+                                    Cum harum consequatur vel eius error! Laborum inventore cum voluptatum, distinctio,
+                                    quidem quo nulla officia corrupti facilis totam similique suscipit vitae? Eveniet
+                                    minus corrupti eum asperiores pariatur? Minus ipsa odit in exercitationem facere
+                                    eligendi officia, error porro possimus doloremque sint explicabo dolores assumenda,
+                                    provident soluta repellendus ab corporis. Doloremque incidunt, eveniet quod
+                                    perspiciatis id illo, reprehenderit distinctio inventore maiores illum odit non
+                                    quidem consequuntur doloribus! Sit dolorem dicta non, sequi blanditiis cumque sint
+                                    in ullam odit laudantium! Excepturi consequatur asperiores quae quo doloribus libero
+                                    deserunt vel delectus quos, incidunt perspiciatis error ad modi possimus laboriosam
+                                    provident architecto quaerat totam, aliquam officia sunt voluptas numquam veritatis
+                                    ea? Molestias quae optio numquam cum tempore?</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header red"><i class="material-icons">school</i>College</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit. Quia perferendis mollitia cumque libero velit a nemo sunt, molestiae, neque,
+                                    reprehenderit expedita! Esse rerum blanditiis est, ipsum quam inventore praesentium,
+                                    sequi natus rem culpa fugiat aut dolores eum et dolorum consequuntur consequatur
+                                    error veritatis libero aliquam velit temporibus possimus tenetur hic? Iusto, ratione
+                                    accusamus repellendus molestias quidem quam veritatis dolorem magnam dolor
+                                    asperiores, sunt odit! Sint repellendus eligendi assumenda deleniti mollitia
+                                    corporis quam alias, dolores ullam praesentium nihil blanditiis ipsam quaerat
+                                    quisquam iusto velit fugiat sed reprehenderit adipisci quae error at? Quos totam
+                                    quibusdam labore autem, ipsa dolore animi accusantium ullam voluptates iste optio
+                                    earum quo officiis assumenda quisquam reiciendis aliquam quia nemo sequi beatae,
+                                    veniam nostrum? Eaque repellendus quisquam, inventore incidunt commodi dolore magnam
+                                    totam, minima ex ipsam delectus unde eius, praesentium labore at voluptatum
+                                    voluptate reiciendis. Reiciendis repellat modi dolor maiores architecto quod,
+                                    tempora odit doloribus saepe! Temporibus, autem voluptatem nesciunt sed porro eum
+                                    tenetur nobis repellendus, aut dicta distinctio quasi laborum architecto reiciendis
+                                    aliquam obcaecati eaque? Minus, soluta. Magnam dolore, odio eveniet veniam iusto
+                                    laboriosam ducimus alias nostrum facere qui temporibus soluta quod? Doloribus,
+                                    deserunt deleniti dignissimos sunt rem neque quod cumque recusandae id ullam
+                                    aliquam?</span></div>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+    </section>
+
+    <!-- service part  -->
+
+    <section>
+        <h4 class="center-align blue-text">Our Servicess</h3>
+            <div class="row">
+                <hr class="col s4 offset-s4">
+            </div>
+            <div class="row  center-align ">
+                <div class="col m4 ">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator responsive-img " src="image/download1.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i
+                                    class="material-icons right">more_vert</i></span>
+                            <a class="waves-effect waves-light blue btn"><i class="material-icons right">send</i>More
+                                Info</a>
+
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i
+                                    class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m4 ">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator responsive-img" src="image/download2.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i
+                                    class="material-icons right">more_vert</i></span>
+                            <a class="waves-effect waves-light blue btn"><i class="material-icons right">send</i>More
+                                Info</a>
+
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i
+                                    class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m4 ">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator responsive-img" src="image/download3.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i
+                                    class="material-icons right">more_vert</i></span>
+                            <a class="waves-effect waves-light blue btn"><i class="material-icons right">send</i>More
+                                Info</a>
+
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i
+                                    class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m4 ">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator responsive-img" src="image/download4.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4 ">Card Title<i
+                                    class="material-icons right">more_vert</i></span>
+                            <a class="waves-effect waves-light blue btn"><i class="material-icons right">send</i>More
+                                Info</a>
+
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i
+                                    class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m4 ">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator responsive-img" src="image/download5.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i
+                                    class="material-icons right">more_vert</i></span>
+                            <a class="waves-effect waves-light blue btn"><i class="material-icons right">send</i>More
+                                Info</a>
+
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i
+                                    class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m4 ">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator responsive-img" src="image/download6.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i
+                                    class="material-icons right">more_vert</i></span>
+                            <a class="waves-effect waves-light blue btn"><i class="material-icons right">send</i>More
+                                Info</a>
+
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i
+                                    class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- gallary part  -->
+    <section>
+        <h4 class="center-align blue-text">Our Gallary</h3>
+            <div class="row">
+                <hr class="col s4 offset-s4">
+            </div>
+            <div class="row ">
+                <div class="col l4 m6 s12 gallary">
+                    <img src="image/download1.jpg" class="materialboxed responsive-img" data-caption="Awesome image !!"
+                        alt="">
+                </div>
+                <div class="col l4 m6 s12 gallary">
+                    <img src="image/download2.jpg" class="materialboxed responsive-img" data-caption="Awesome image !!"
+                        alt="">
+                </div>
+                <div class="col l4 m6 s12 gallary">
+                    <img src="image/download3.jpg" class="materialboxed responsive-img" data-caption="Awesome image !!"
+                        alt="">
+                </div>
+                <div class="col l4 m6 s12 gallary">
+                    <img src="image/download4.jpg" class="materialboxed responsive-img" data-caption="Awesome image !!"
+                        alt="">
+                </div>
+                <div class="col l4 m6 s12 gallary">
+                    <img src="image/download5.jpg" class="materialboxed responsive-img" data-caption="Awesome image !!"
+                        alt="">
+                </div>
+                <div class="col l4 m6 s12 gallary">
+                    <img src="image/download4.jpg" class="materialboxed responsive-img" data-caption="Awesome image !!"
+                        alt="">
+                </div>
+                <div class="col l4 m6 s12 gallary">
+                    <img src="image/download2.jpg" class="materialboxed responsive-img" data-caption="Awesome image !!"
+                        alt="">
+                </div>
+                <div class="col l4 m6 s12 gallary">
+                    <img src="image/download4.jpg" class="materialboxed responsive-img" data-caption="Awesome image !!"
+                        alt="">
+                </div>
+                <div class="col l4 m6 s12 gallary">
+                    <img src="image/download1.jpg" class="materialboxed responsive-img" data-caption="Awesome image !!"
+                        alt="">
+                </div>
+            </div>
+    </section>
+
+    <!-- contact form .............................................  -->
+    <section>
+        <h4 class="center-align blue-text">Contact Us</h3>
+            <div class="row">
+                <hr class="col s4 offset-s4">
+            </div>
+
+            <div class="row container">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col m6 s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_prefix" type="text" class="validate" data-length="20">
+                            <label for="icon_prefix">First Name</label>
+                        </div>
+                        <div class="input-field col m6 s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon-last" type="text" class="validate" data-length="15">
+                            <label for="icon-last">Last Name</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">email</i>
+                            <input id="icon-email" type="email" class="validate" data-length="40">
+                            <label for="icon-email">Email</label>
+                            <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="icon_telephone" type="number" class="validate" data-length="10">
+                            <label for="icon_telephone">Telephone</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">mode_edit</i>
+                            <textarea id="textarea" class="materialize-textarea" data-length="500"></textarea>
+                            <label for="textarea">Message</label>
+                        </div>
+                    </div>
+                    <div class="col s12 center-align">
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+
+
+
+                </form>
+            </div>
+    </section>
+
+
+
+    <!-- <-- model  --............................  .....> -->
+    <!-- Modal Trigger -->
+
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4>Sign Up </h4>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col m6 s12">
+                            <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col m6 s12">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="cpassword" type="password" class="validate">
+                            <label for="cpassword">Confirm Password</label>
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn blue">Submit</a>
+        </div>
+    </div>
+
+    <!-- footer department  -->
+
+
+    <footer class="page-footer blue">
+        <div class="container">
+            <div class="row">
+                <div class="col  s6">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                        content.</p>
+                </div>
+
+                <div class="col s6">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true,
+                indicators: true
+            });
+            $('.fixed-action-btn').floatingActionButton();
+            $('.materialboxed').materialbox();
+            $('input#input_text,input#icon_prefix,input#icon-last,input#icon-email,input#icon_telephone, textarea#textarea').characterCounter();
+            $('.sidenav').sidenav();
+            $('.collapsible').collapsible();
+            $('.modal').modal();
+        });
+
+    </script>
+</body>
+
+</html>
